@@ -25,8 +25,8 @@ public class EventManager : ScriptableObject
     static public event OnButtonUpEventDelegate OnButtonUpEvent;
     public static void ButtonUpEvent()
     {
-        if (OnButtonLeftEvent != null)
-            OnButtonLeftEvent();
+        if (OnButtonUpEvent != null)
+            OnButtonUpEvent();
     }
 
     public delegate void OnButtonSwitchEventDelegate();
