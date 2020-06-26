@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     public float speed;
     public float jumpForce;
     private float moveInput;
@@ -18,16 +18,18 @@ public class PlayerController : MonoBehaviour
     public float jumpTime;
     private bool isJumping;
 
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         moveInput = Input.GetAxisRaw("Horizontal");
+        animator.SetFloat("speed", Mathf.Abs(moveInput));
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
     }
 
@@ -69,6 +71,13 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.W)) 
         {
             isJumping = false;
+        }
+
+        if (isGrounded == true) 
+        {
+            animator.SetBool("isFalling", false);
+            animator.SetBool("isJumping", false);
+            animator.SetFloat("speed", Mathf.Abs(moveInput));
         }
     }
 }
