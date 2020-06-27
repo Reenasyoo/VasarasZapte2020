@@ -685,6 +685,10 @@ MonoBehaviour:
   animator: {fileID: 1504584736}
   leverAnimator: {fileID: 0}
   isLeverPressed: 0
+  left: 0
+  right: 0
+  up: 0
+  switchPlayer: 0
 --- !u!61 &1504584732
 BoxCollider2D:
   m_ObjectHideFlags: 0
