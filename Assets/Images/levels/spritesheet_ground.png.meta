@@ -4,10 +4,10 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -4594108545075643932
-    second: spritesheet_ground_0
+    second: grassrightend
   - first:
       213: -6812745508127951216
-    second: spritesheet_ground_1
+    second: dirtmiddle
   - first:
       213: 5214741231656160328
     second: spritesheet_ground_2
@@ -25,10 +25,10 @@ TextureImporter:
     second: spritesheet_ground_6
   - first:
       213: 9166125722054658032
-    second: spritesheet_ground_7
+    second: grassmiddle
   - first:
       213: 7180208572687615227
-    second: spritesheet_ground_8
+    second: grassSolo
   - first:
       213: 2446787484468898478
     second: spritesheet_ground_9
@@ -46,7 +46,7 @@ TextureImporter:
     second: spritesheet_ground_13
   - first:
       213: -2549968003841791753
-    second: spritesheet_ground_14
+    second: grassleftend
   - first:
       213: -6425025451165566306
     second: spritesheet_ground_15
@@ -67,7 +67,7 @@ TextureImporter:
     second: spritesheet_ground_20
   - first:
       213: 5827916713276950615
-    second: spritesheet_ground_21
+    second: grassslopetoright
   - first:
       213: 6429803400678342394
     second: spritesheet_ground_22
@@ -88,7 +88,7 @@ TextureImporter:
     second: spritesheet_ground_27
   - first:
       213: -1551006206955857078
-    second: spritesheet_ground_28
+    second: grassslopetoleft
   - first:
       213: -2085723436643834332
     second: spritesheet_ground_29
@@ -109,7 +109,7 @@ TextureImporter:
     second: spritesheet_ground_34
   - first:
       213: 43929206921070830
-    second: spritesheet_ground_35
+    second: grasssmallrightend
   - first:
       213: -6647838583484056206
     second: spritesheet_ground_36
@@ -130,7 +130,7 @@ TextureImporter:
     second: spritesheet_ground_41
   - first:
       213: 1962331492453746296
-    second: spritesheet_ground_42
+    second: grasssmallmiddle
   - first:
       213: 6882242618566143235
     second: spritesheet_ground_43
@@ -151,7 +151,7 @@ TextureImporter:
     second: spritesheet_ground_48
   - first:
       213: 3340803611993116794
-    second: spritesheet_ground_49
+    second: grasssmallleftend
   - first:
       213: 5900983535046900284
     second: spritesheet_ground_50
@@ -172,7 +172,7 @@ TextureImporter:
     second: spritesheet_ground_55
   - first:
       213: 3306616678336070867
-    second: spritesheet_ground_56
+    second: grasssmallsolo
   - first:
       213: 6743788543847199750
     second: spritesheet_ground_57
@@ -310,7 +310,7 @@ TextureImporter:
     second: spritesheet_ground_101
   - first:
       213: -5077838985949602771
-    second: spritesheet_ground_102
+    second: groundsolo
   - first:
       213: -1474065594492745773
     second: spritesheet_ground_103
@@ -326,942 +326,6 @@ TextureImporter:
   - first:
       213: 8934231696101706941
     second: spritesheet_ground_107
-  - first:
-      213: -8447918238970126850
-    second: spritesheet_ground_108
-  - first:
-      213: 3925470107452397477
-    second: spritesheet_ground_109
-  - first:
-      213: -2471110107954080208
-    second: spritesheet_ground_110
-  - first:
-      213: 259428179588505563
-    second: spritesheet_ground_111
-  - first:
-      213: 5054381176695794746
-    second: spritesheet_ground_112
-  - first:
-      213: 7879840014474415766
-    second: spritesheet_ground_113
-  - first:
-      213: 432673252022849596
-    second: spritesheet_ground_114
-  - first:
-      213: -5864985341239145344
-    second: spritesheet_ground_115
-  - first:
-      213: 9213688678659006165
-    second: spritesheet_ground_116
-  - first:
-      213: -7891840741602840392
-    second: spritesheet_ground_117
-  - first:
-      213: 4486577878708348930
-    second: spritesheet_ground_118
-  - first:
-      213: 6426453966713335410
-    second: spritesheet_ground_119
-  - first:
-      213: -1216834243946963054
-    second: spritesheet_ground_120
-  - first:
-      213: -8773744529677273216
-    second: spritesheet_ground_121
-  - first:
-      213: 5859488361484463829
-    second: spritesheet_ground_122
-  - first:
-      213: 5871775471560353663
-    second: spritesheet_ground_123
-  - first:
-      213: -7461670066315534498
-    second: spritesheet_ground_124
-  - first:
-      213: -2085609238253490816
-    second: spritesheet_ground_125
-  - first:
-      213: 5851582445970361944
-    second: spritesheet_ground_126
-  - first:
-      213: -2895196181187306504
-    second: spritesheet_ground_127
-  - first:
-      213: -8229936263342353755
-    second: spritesheet_ground_128
-  - first:
-      213: 8101466846174757298
-    second: spritesheet_ground_129
-  - first:
-      213: -2305715978174536917
-    second: spritesheet_ground_130
-  - first:
-      213: 6148540109799956551
-    second: spritesheet_ground_131
-  - first:
-      213: -1515021908928649929
-    second: spritesheet_ground_132
-  - first:
-      213: -2655696123619175820
-    second: spritesheet_ground_133
-  - first:
-      213: -1299580316122770952
-    second: spritesheet_ground_134
-  - first:
-      213: -2840824623464283997
-    second: spritesheet_ground_135
-  - first:
-      213: 3848476852961904763
-    second: spritesheet_ground_136
-  - first:
-      213: -1160864216827273685
-    second: spritesheet_ground_137
-  - first:
-      213: -4755606918262696285
-    second: spritesheet_ground_138
-  - first:
-      213: 8914635588423545851
-    second: spritesheet_ground_139
-  - first:
-      213: -2889048828627129768
-    second: spritesheet_ground_140
-  - first:
-      213: 4118148882196087913
-    second: spritesheet_ground_141
-  - first:
-      213: 906507222364483009
-    second: spritesheet_ground_142
-  - first:
-      213: 4639509061784379340
-    second: spritesheet_ground_143
-  - first:
-      213: -6992171412899627825
-    second: spritesheet_ground_144
-  - first:
-      213: -998782221814745233
-    second: spritesheet_ground_145
-  - first:
-      213: -8429578597646289376
-    second: spritesheet_ground_146
-  - first:
-      213: 6272287812111204005
-    second: spritesheet_ground_147
-  - first:
-      213: -4257210705333699191
-    second: spritesheet_ground_148
-  - first:
-      213: 837336928907656501
-    second: spritesheet_ground_149
-  - first:
-      213: 8525302587530719313
-    second: spritesheet_ground_150
-  - first:
-      213: -3110864132685259569
-    second: spritesheet_ground_151
-  - first:
-      213: -3697078815595329078
-    second: spritesheet_ground_152
-  - first:
-      213: 7161033062871759987
-    second: spritesheet_ground_153
-  - first:
-      213: 2457801429569922091
-    second: spritesheet_ground_154
-  - first:
-      213: 8853760468622460032
-    second: spritesheet_ground_155
-  - first:
-      213: -3414258156629881238
-    second: spritesheet_ground_156
-  - first:
-      213: 4069891206792975855
-    second: spritesheet_ground_157
-  - first:
-      213: 8071820875258498998
-    second: spritesheet_ground_158
-  - first:
-      213: 67143811920270982
-    second: spritesheet_ground_159
-  - first:
-      213: -5704053584773389750
-    second: spritesheet_ground_160
-  - first:
-      213: -7200059758135209789
-    second: spritesheet_ground_161
-  - first:
-      213: 1774615592076155697
-    second: spritesheet_ground_162
-  - first:
-      213: 1017477304195660608
-    second: spritesheet_ground_163
-  - first:
-      213: 7195407242647789801
-    second: spritesheet_ground_164
-  - first:
-      213: -1835476326748885409
-    second: spritesheet_ground_165
-  - first:
-      213: 1493847099099740056
-    second: spritesheet_ground_166
-  - first:
-      213: -4756919242697819382
-    second: spritesheet_ground_167
-  - first:
-      213: -2299048208878208642
-    second: spritesheet_ground_168
-  - first:
-      213: 8063347156663794964
-    second: spritesheet_ground_169
-  - first:
-      213: -9203410241465617322
-    second: spritesheet_ground_170
-  - first:
-      213: 9182274004283672743
-    second: spritesheet_ground_171
-  - first:
-      213: 5964128082055308442
-    second: spritesheet_ground_172
-  - first:
-      213: 7847464079008642715
-    second: spritesheet_ground_173
-  - first:
-      213: 2133659853347591025
-    second: spritesheet_ground_174
-  - first:
-      213: -5563837489365930427
-    second: spritesheet_ground_175
-  - first:
-      213: -1820037184132789727
-    second: spritesheet_ground_176
-  - first:
-      213: 8665936391592453134
-    second: spritesheet_ground_177
-  - first:
-      213: -1955027729447177498
-    second: spritesheet_ground_178
-  - first:
-      213: 5759220506643151865
-    second: spritesheet_ground_179
-  - first:
-      213: -7728015572644415971
-    second: spritesheet_ground_180
-  - first:
-      213: -2514711748707397282
-    second: spritesheet_ground_181
-  - first:
-      213: 9002663353332574104
-    second: spritesheet_ground_182
-  - first:
-      213: 4437340611619689698
-    second: spritesheet_ground_183
-  - first:
-      213: -4489604277130972283
-    second: spritesheet_ground_184
-  - first:
-      213: -8957816014705622574
-    second: spritesheet_ground_185
-  - first:
-      213: -2052763771038131724
-    second: spritesheet_ground_186
-  - first:
-      213: -8640059424353625699
-    second: spritesheet_ground_187
-  - first:
-      213: 8938391363531261703
-    second: spritesheet_ground_188
-  - first:
-      213: 2063424562598142792
-    second: spritesheet_ground_189
-  - first:
-      213: 2652938784171946342
-    second: spritesheet_ground_190
-  - first:
-      213: -8616074870768540371
-    second: spritesheet_ground_191
-  - first:
-      213: -7645700222158096509
-    second: spritesheet_ground_192
-  - first:
-      213: -1090712124587556185
-    second: spritesheet_ground_193
-  - first:
-      213: -2139672510995097102
-    second: spritesheet_ground_194
-  - first:
-      213: 8451855601419265526
-    second: spritesheet_ground_195
-  - first:
-      213: 8914688299337933055
-    second: spritesheet_ground_196
-  - first:
-      213: 5291129383874928827
-    second: spritesheet_ground_197
-  - first:
-      213: -5257265645303254568
-    second: spritesheet_ground_198
-  - first:
-      213: -5912911862398715367
-    second: spritesheet_ground_199
-  - first:
-      213: 802898864677926253
-    second: spritesheet_ground_200
-  - first:
-      213: 4945806721191901242
-    second: spritesheet_ground_201
-  - first:
-      213: 580968271880758560
-    second: spritesheet_ground_202
-  - first:
-      213: -4823021259835675586
-    second: spritesheet_ground_203
-  - first:
-      213: 3122338935642506804
-    second: spritesheet_ground_204
-  - first:
-      213: -4995442287432021568
-    second: spritesheet_ground_205
-  - first:
-      213: -6928813513920273353
-    second: spritesheet_ground_206
-  - first:
-      213: -2761298804218402625
-    second: spritesheet_ground_207
-  - first:
-      213: 1608600112736276810
-    second: spritesheet_ground_208
-  - first:
-      213: -8934196026276508504
-    second: spritesheet_ground_209
-  - first:
-      213: -8740576549867456284
-    second: spritesheet_ground_210
-  - first:
-      213: -7423654946465876552
-    second: spritesheet_ground_211
-  - first:
-      213: 3211035720161829203
-    second: spritesheet_ground_212
-  - first:
-      213: 3258632878254470719
-    second: spritesheet_ground_213
-  - first:
-      213: 5813755333011666422
-    second: spritesheet_ground_214
-  - first:
-      213: -1056952952692150887
-    second: spritesheet_ground_215
-  - first:
-      213: 6218605549192774672
-    second: spritesheet_ground_216
-  - first:
-      213: -8122435746637757484
-    second: spritesheet_ground_217
-  - first:
-      213: -1084253629003377677
-    second: spritesheet_ground_218
-  - first:
-      213: -8237510790904822187
-    second: spritesheet_ground_219
-  - first:
-      213: -725491650281775438
-    second: spritesheet_ground_220
-  - first:
-      213: -7655521291308601791
-    second: spritesheet_ground_221
-  - first:
-      213: -5738707926917863632
-    second: spritesheet_ground_222
-  - first:
-      213: -2845887323339579012
-    second: spritesheet_ground_223
-  - first:
-      213: -8635194179852774638
-    second: spritesheet_ground_224
-  - first:
-      213: -8129975778499188503
-    second: spritesheet_ground_225
-  - first:
-      213: 6597854397731304430
-    second: spritesheet_ground_226
-  - first:
-      213: 3112424827541927704
-    second: spritesheet_ground_227
-  - first:
-      213: 1769504298042139443
-    second: spritesheet_ground_228
-  - first:
-      213: 6861923297815453579
-    second: spritesheet_ground_229
-  - first:
-      213: 269854896515720664
-    second: spritesheet_ground_230
-  - first:
-      213: 5642036046438159649
-    second: spritesheet_ground_231
-  - first:
-      213: 4166068568221967197
-    second: spritesheet_ground_232
-  - first:
-      213: 3253739950598401168
-    second: spritesheet_ground_233
-  - first:
-      213: -4131246515147099241
-    second: spritesheet_ground_234
-  - first:
-      213: 2231542327531367796
-    second: spritesheet_ground_235
-  - first:
-      213: 1397465911584504669
-    second: spritesheet_ground_236
-  - first:
-      213: -4113957711387995447
-    second: spritesheet_ground_237
-  - first:
-      213: 2886406942532076167
-    second: spritesheet_ground_238
-  - first:
-      213: -6163699231715573752
-    second: spritesheet_ground_239
-  - first:
-      213: -2304279132690921001
-    second: spritesheet_ground_240
-  - first:
-      213: -4999365001985156139
-    second: spritesheet_ground_241
-  - first:
-      213: -8982571587343094247
-    second: spritesheet_ground_242
-  - first:
-      213: -5884260626112879029
-    second: spritesheet_ground_243
-  - first:
-      213: 1161612283088349007
-    second: spritesheet_ground_244
-  - first:
-      213: -2334353958800559806
-    second: spritesheet_ground_245
-  - first:
-      213: -9068208244261673783
-    second: spritesheet_ground_246
-  - first:
-      213: 4849534813672040419
-    second: spritesheet_ground_247
-  - first:
-      213: 7609985173437066480
-    second: spritesheet_ground_248
-  - first:
-      213: 1467272350359897466
-    second: spritesheet_ground_249
-  - first:
-      213: -3356475874526259832
-    second: spritesheet_ground_250
-  - first:
-      213: -246088264058369972
-    second: spritesheet_ground_251
-  - first:
-      213: 2100115091710148843
-    second: spritesheet_ground_252
-  - first:
-      213: -5179632946981841590
-    second: spritesheet_ground_253
-  - first:
-      213: -260270302218650800
-    second: spritesheet_ground_254
-  - first:
-      213: 3061225623050945204
-    second: spritesheet_ground_255
-  - first:
-      213: 4779250751883932236
-    second: spritesheet_ground_256
-  - first:
-      213: 4837770102601702022
-    second: spritesheet_ground_257
-  - first:
-      213: 4686171144824671760
-    second: spritesheet_ground_258
-  - first:
-      213: 3671692822513131032
-    second: spritesheet_ground_259
-  - first:
-      213: -9210800233161910041
-    second: spritesheet_ground_260
-  - first:
-      213: 4308377576753636542
-    second: spritesheet_ground_261
-  - first:
-      213: -7592653129892668192
-    second: spritesheet_ground_262
-  - first:
-      213: -2771383179634785677
-    second: spritesheet_ground_263
-  - first:
-      213: 6290415617732949894
-    second: spritesheet_ground_264
-  - first:
-      213: -2248535917605452759
-    second: spritesheet_ground_265
-  - first:
-      213: 6942637787286813644
-    second: spritesheet_ground_266
-  - first:
-      213: 5480368496174855058
-    second: spritesheet_ground_267
-  - first:
-      213: -489116751457325048
-    second: spritesheet_ground_268
-  - first:
-      213: -7147045506378312813
-    second: spritesheet_ground_269
-  - first:
-      213: -7860576790641479339
-    second: spritesheet_ground_270
-  - first:
-      213: -6180843852828795030
-    second: spritesheet_ground_271
-  - first:
-      213: 1315398692450678111
-    second: spritesheet_ground_272
-  - first:
-      213: -6491488225503076274
-    second: spritesheet_ground_273
-  - first:
-      213: 2676995990157529206
-    second: spritesheet_ground_274
-  - first:
-      213: -7480581702682027716
-    second: spritesheet_ground_275
-  - first:
-      213: -2586296815164345653
-    second: spritesheet_ground_276
-  - first:
-      213: -8311568414523376607
-    second: spritesheet_ground_277
-  - first:
-      213: -6383607922813143430
-    second: spritesheet_ground_278
-  - first:
-      213: -3604519736586088905
-    second: spritesheet_ground_279
-  - first:
-      213: 4860022291881038803
-    second: spritesheet_ground_280
-  - first:
-      213: -2675918276324855957
-    second: spritesheet_ground_281
-  - first:
-      213: -6552812108371090095
-    second: spritesheet_ground_282
-  - first:
-      213: 5660884164917659109
-    second: spritesheet_ground_283
-  - first:
-      213: -6719122262848618824
-    second: spritesheet_ground_284
-  - first:
-      213: -7828409399866909633
-    second: spritesheet_ground_285
-  - first:
-      213: 368886183522797301
-    second: spritesheet_ground_286
-  - first:
-      213: 1290831684109780275
-    second: spritesheet_ground_287
-  - first:
-      213: 3698237020152858779
-    second: spritesheet_ground_288
-  - first:
-      213: 8861640417111709274
-    second: spritesheet_ground_289
-  - first:
-      213: 155884510595833774
-    second: spritesheet_ground_290
-  - first:
-      213: 4138505572893278895
-    second: spritesheet_ground_291
-  - first:
-      213: 6784811587499093389
-    second: spritesheet_ground_292
-  - first:
-      213: -720851263975211196
-    second: spritesheet_ground_293
-  - first:
-      213: -6510533210204292131
-    second: spritesheet_ground_294
-  - first:
-      213: 8088278906536444340
-    second: spritesheet_ground_295
-  - first:
-      213: -3056143963840148538
-    second: spritesheet_ground_296
-  - first:
-      213: -3448371592064300141
-    second: spritesheet_ground_297
-  - first:
-      213: -6557088975346412050
-    second: spritesheet_ground_298
-  - first:
-      213: -3355897524534017500
-    second: spritesheet_ground_299
-  - first:
-      213: 7986358864111934241
-    second: spritesheet_ground_300
-  - first:
-      213: -3738433677464179585
-    second: spritesheet_ground_301
-  - first:
-      213: 8740148672281967077
-    second: spritesheet_ground_302
-  - first:
-      213: -9158255406995883446
-    second: spritesheet_ground_303
-  - first:
-      213: -3719388349268830126
-    second: spritesheet_ground_304
-  - first:
-      213: -4626847957200317951
-    second: spritesheet_ground_305
-  - first:
-      213: 4285195595541490592
-    second: spritesheet_ground_306
-  - first:
-      213: 1861742154895273866
-    second: spritesheet_ground_307
-  - first:
-      213: 4514281719964809899
-    second: spritesheet_ground_308
-  - first:
-      213: -3174533092573625957
-    second: spritesheet_ground_309
-  - first:
-      213: -8752110656751767080
-    second: spritesheet_ground_310
-  - first:
-      213: 3069204797780689627
-    second: spritesheet_ground_311
-  - first:
-      213: 3747951326473151655
-    second: spritesheet_ground_312
-  - first:
-      213: 5163197816553871766
-    second: spritesheet_ground_313
-  - first:
-      213: -8851127551043713496
-    second: spritesheet_ground_314
-  - first:
-      213: 8003341806632836542
-    second: spritesheet_ground_315
-  - first:
-      213: -2196299039416819467
-    second: spritesheet_ground_316
-  - first:
-      213: -4274156511424707482
-    second: spritesheet_ground_317
-  - first:
-      213: -5033297207152861890
-    second: spritesheet_ground_318
-  - first:
-      213: 7806199924029366307
-    second: spritesheet_ground_319
-  - first:
-      213: -3320736670927816155
-    second: spritesheet_ground_320
-  - first:
-      213: 3122367961831519815
-    second: spritesheet_ground_321
-  - first:
-      213: -8060183421752093909
-    second: spritesheet_ground_322
-  - first:
-      213: 7983231727006746935
-    second: spritesheet_ground_323
-  - first:
-      213: -3038591856639494725
-    second: spritesheet_ground_324
-  - first:
-      213: -2697573344984948072
-    second: spritesheet_ground_325
-  - first:
-      213: -1434074253150340224
-    second: spritesheet_ground_326
-  - first:
-      213: 1623906328276089469
-    second: spritesheet_ground_327
-  - first:
-      213: -4669313926312189260
-    second: spritesheet_ground_328
-  - first:
-      213: -2099855213342440551
-    second: spritesheet_ground_329
-  - first:
-      213: -2821215151156230650
-    second: spritesheet_ground_330
-  - first:
-      213: 95059608670620910
-    second: spritesheet_ground_331
-  - first:
-      213: 5870128734455568400
-    second: spritesheet_ground_332
-  - first:
-      213: 5192666398688054420
-    second: spritesheet_ground_333
-  - first:
-      213: 7564610396455044769
-    second: spritesheet_ground_334
-  - first:
-      213: 6075561868647847702
-    second: spritesheet_ground_335
-  - first:
-      213: 6431669376491366178
-    second: spritesheet_ground_336
-  - first:
-      213: -2772184877860714329
-    second: spritesheet_ground_337
-  - first:
-      213: 4031727015190057835
-    second: spritesheet_ground_338
-  - first:
-      213: 6687068718973158879
-    second: spritesheet_ground_339
-  - first:
-      213: -7406247520584296593
-    second: spritesheet_ground_340
-  - first:
-      213: -8200142645118297480
-    second: spritesheet_ground_341
-  - first:
-      213: 3729742697596988578
-    second: spritesheet_ground_342
-  - first:
-      213: -6947476057589098944
-    second: spritesheet_ground_343
-  - first:
-      213: -1790599921987737072
-    second: spritesheet_ground_344
-  - first:
-      213: -1197240560872765449
-    second: spritesheet_ground_345
-  - first:
-      213: 342475128362369984
-    second: spritesheet_ground_346
-  - first:
-      213: -1255925806465057573
-    second: spritesheet_ground_347
-  - first:
-      213: 2951846225324892064
-    second: spritesheet_ground_348
-  - first:
-      213: -8719347488702296092
-    second: spritesheet_ground_349
-  - first:
-      213: 975927983186153032
-    second: spritesheet_ground_350
-  - first:
-      213: 3192617686298193265
-    second: spritesheet_ground_351
-  - first:
-      213: -5878330419598749894
-    second: spritesheet_ground_352
-  - first:
-      213: 7686503149517743871
-    second: spritesheet_ground_353
-  - first:
-      213: 6410784456847212565
-    second: spritesheet_ground_354
-  - first:
-      213: -5344673589264541339
-    second: spritesheet_ground_355
-  - first:
-      213: 184674988619182077
-    second: spritesheet_ground_356
-  - first:
-      213: -392767647574212412
-    second: spritesheet_ground_357
-  - first:
-      213: 1072993690054536700
-    second: spritesheet_ground_358
-  - first:
-      213: 3745135849383949181
-    second: spritesheet_ground_359
-  - first:
-      213: -364725943323304152
-    second: spritesheet_ground_360
-  - first:
-      213: 2762593391118196669
-    second: spritesheet_ground_361
-  - first:
-      213: -6468696181634887140
-    second: spritesheet_ground_362
-  - first:
-      213: -4831434537740542696
-    second: spritesheet_ground_363
-  - first:
-      213: -3139521007299474261
-    second: spritesheet_ground_364
-  - first:
-      213: 1785907641052920657
-    second: spritesheet_ground_365
-  - first:
-      213: -2270577649804994077
-    second: spritesheet_ground_366
-  - first:
-      213: -3182399236352887841
-    second: spritesheet_ground_367
-  - first:
-      213: 4565046124100290950
-    second: spritesheet_ground_368
-  - first:
-      213: -5837527670535777462
-    second: spritesheet_ground_369
-  - first:
-      213: -4419484990998191672
-    second: spritesheet_ground_370
-  - first:
-      213: -6984070700132873347
-    second: spritesheet_ground_371
-  - first:
-      213: -3318890465009767577
-    second: spritesheet_ground_372
-  - first:
-      213: 8535636686297235234
-    second: spritesheet_ground_373
-  - first:
-      213: 1299925122650485491
-    second: spritesheet_ground_374
-  - first:
-      213: 3027915664841954791
-    second: spritesheet_ground_375
-  - first:
-      213: 3022847428229136506
-    second: spritesheet_ground_376
-  - first:
-      213: 2632125607945533870
-    second: spritesheet_ground_377
-  - first:
-      213: -245556023099897185
-    second: spritesheet_ground_378
-  - first:
-      213: -2614919735081675921
-    second: spritesheet_ground_379
-  - first:
-      213: 7962871808243852024
-    second: spritesheet_ground_380
-  - first:
-      213: 2046962517363366693
-    second: spritesheet_ground_381
-  - first:
-      213: -6192242529857377724
-    second: spritesheet_ground_382
-  - first:
-      213: -5564156060284547357
-    second: spritesheet_ground_383
-  - first:
-      213: 2909529049797346186
-    second: spritesheet_ground_384
-  - first:
-      213: 5904831500195141631
-    second: spritesheet_ground_385
-  - first:
-      213: -4347054150757602541
-    second: spritesheet_ground_386
-  - first:
-      213: 5006595710610184309
-    second: spritesheet_ground_387
-  - first:
-      213: -3964255419558570224
-    second: spritesheet_ground_388
-  - first:
-      213: -2951017684110042552
-    second: spritesheet_ground_389
-  - first:
-      213: -6499897115571749080
-    second: spritesheet_ground_390
-  - first:
-      213: 1084748942723109766
-    second: spritesheet_ground_391
-  - first:
-      213: 363170913915011394
-    second: spritesheet_ground_392
-  - first:
-      213: 1221700753402981667
-    second: spritesheet_ground_393
-  - first:
-      213: 2870555164397655419
-    second: spritesheet_ground_394
-  - first:
-      213: -1918021603409608016
-    second: spritesheet_ground_395
-  - first:
-      213: 1686680195843750647
-    second: spritesheet_ground_396
-  - first:
-      213: 2316721017448667247
-    second: spritesheet_ground_397
-  - first:
-      213: -5867739074287664154
-    second: spritesheet_ground_398
-  - first:
-      213: 3768046359702607364
-    second: spritesheet_ground_399
-  - first:
-      213: 8138582321929291759
-    second: spritesheet_ground_400
-  - first:
-      213: 7580449014550498167
-    second: spritesheet_ground_401
-  - first:
-      213: 8813172689476407602
-    second: spritesheet_ground_402
-  - first:
-      213: -2430952516642612260
-    second: spritesheet_ground_403
-  - first:
-      213: -4428558179626994604
-    second: spritesheet_ground_404
-  - first:
-      213: -546386860080949990
-    second: spritesheet_ground_405
-  - first:
-      213: -1831160372023298681
-    second: spritesheet_ground_406
-  - first:
-      213: -2121853724465907665
-    second: spritesheet_ground_407
-  - first:
-      213: -3597867796142950703
-    second: spritesheet_ground_408
-  - first:
-      213: -3519905945000817511
-    second: spritesheet_ground_409
-  - first:
-      213: -354855243887780866
-    second: spritesheet_ground_410
-  - first:
-      213: -5263078879876969652
-    second: spritesheet_ground_411
-  - first:
-      213: 3719780422320424827
-    second: spritesheet_ground_412
-  - first:
-      213: 8965033172491781584
-    second: spritesheet_ground_413
-  - first:
-      213: -6230240809538842418
-    second: spritesheet_ground_414
-  - first:
-      213: 5125698996052074379
-    second: spritesheet_ground_415
-  - first:
-      213: 3200963573621615067
-    second: spritesheet_ground_416
-  - first:
-      213: -7544705940338452653
-    second: spritesheet_ground_417
-  - first:
-      213: -5442220871261631345
-    second: spritesheet_ground_418
-  - first:
-      213: -6144661885515992436
-    second: spritesheet_ground_419
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1371,7 +435,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spritesheet_ground_0
+      name: grassrightend
       rect:
         serializedVersion: 2
         x: 0
@@ -1392,7 +456,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_ground_1
+      name: dirtmiddle
       rect:
         serializedVersion: 2
         x: 128
@@ -1518,7 +582,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_ground_7
+      name: grassmiddle
       rect:
         serializedVersion: 2
         x: 0
@@ -1539,7 +603,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_ground_8
+      name: grassSolo
       rect:
         serializedVersion: 2
         x: 128
@@ -1665,7 +729,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_ground_14
+      name: grassleftend
       rect:
         serializedVersion: 2
         x: 0
@@ -1812,7 +876,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_ground_21
+      name: grassslopetoright
       rect:
         serializedVersion: 2
         x: 0
@@ -1858,7 +922,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 1536
+        y: 1533
         width: 128
         height: 128
       alignment: 0
@@ -1959,7 +1023,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_ground_28
+      name: grassslopetoleft
       rect:
         serializedVersion: 2
         x: 0
@@ -2106,7 +1170,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_ground_35
+      name: grasssmallrightend
       rect:
         serializedVersion: 2
         x: 0
@@ -2253,10 +1317,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_ground_42
+      name: grasssmallmiddle
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 1152
         width: 128
         height: 128
@@ -2400,7 +1464,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_ground_49
+      name: grasssmallleftend
       rect:
         serializedVersion: 2
         x: 0
@@ -2547,7 +1611,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_ground_56
+      name: grasssmallsolo
       rect:
         serializedVersion: 2
         x: 0
@@ -3513,7 +2577,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_ground_102
+      name: groundsolo
       rect:
         serializedVersion: 2
         x: 0
@@ -3641,7 +2705,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 9590799f240134668ba703df32251da5
+    spriteID: 89d363d40bbf0bb47912d2bb53ff2b0d
     internalID: 0
     vertices: []
     indices: 
