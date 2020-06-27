@@ -25,6 +25,9 @@ public class PlayerController : MonoBehaviour
     private bool isJumping;
 
     public Animator animator;
+    public Animator leverAnimator;
+
+    public bool isLeverPressed;
 
     public bool left, right, up, switchPlayer;
 

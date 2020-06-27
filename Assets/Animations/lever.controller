@@ -62,8 +62,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: isMovingToLeft
+  - m_ConditionMode: 1
+    m_ConditionEvent: isPressed
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6674596352839398340}
@@ -115,19 +115,7 @@ AnimatorController:
   m_Name: lever
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: isMovingToRight
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: isIdle
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: isMovingToLeft
+  - m_Name: isPressed
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -182,10 +170,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: isMovingToRight
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: isIdle
+    m_ConditionEvent: isPressed
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -8673712714539384021}
@@ -241,7 +226,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: isMovingToRight
+    m_ConditionEvent: isPressed
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 547207626599636964}
@@ -266,10 +251,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: isMovingToLeft
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: isIdle
+    m_ConditionEvent: isPressed
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -111077895301188626}
