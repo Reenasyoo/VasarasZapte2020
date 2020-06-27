@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class PlayerController : MonoBehaviour
 {
@@ -61,14 +62,30 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        RaycastHit2D hit = Physics2D.Raycast(groundCollider.position, -vector2Up, groundCheck, groundLayer);
+        // RaycastHit2D hit = Physics2D.Raycast(groundCollider.position, -vector2Up, groundCheck, groundLayer);
         // Debug.DrawRay(transform.position, -vector2Up * groundCheck, Color.red);
-        // Debug.DrawRay(groundCollider.position, -vector2Up * groundCheck, Color.red);
+        // Debug.DrawRay(groundCollider.position, -vector2Up * groundCheck * 10, Color.red);
 
-        if (hit)
-        {   
-            isGrounded = true;
-        }
+        // if (hit)
+        // {
+
+        //     GridLayout grid = hit.collider.gameObject.GetComponent<Tilemap>().layoutGrid;
+        //     Vector3Int cellPosition = grid.WorldToCell(transform.position);
+        //     Vector3Int position = new Vector3Int(
+        //         Mathf.RoundToInt(transform.position.x),
+        //         Mathf.RoundToInt(transform.position.y),
+        //         Mathf.RoundToInt(transform.position.z));
+        //     Tile tile = hit.collider.gameObject.GetComponent<Tilemap>().GetTile<Tile>(position);
+
+        //     Debug.Log(cellPosition);
+        //     // Debug.Log(hit.collider);
+
+
+        //     Debug.Log("Tile :" + tile.name);
+
+
+        //     // isGrounded = true;
+        // }
 
         if (moveInput > 0)
         {
@@ -149,6 +166,11 @@ public class PlayerController : MonoBehaviour
         //     animator.SetBool(anim_isJumping, false);
         //     animator.SetFloat(anim_speed, Mathf.Abs(moveInput));
         // }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        isGrounded = true;
     }
 
     private void ButtonLeft(bool _event)
