@@ -20,8 +20,7 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public float jumpForce;
 
-    [SerializeField]
-    private bool isGrounded;
+    public bool isGrounded;
 
     // public LayerMask groundLayer;
 
@@ -113,10 +112,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        isGrounded = true;
-    }
+
 
     private void ButtonLeft(bool _event)
     {
