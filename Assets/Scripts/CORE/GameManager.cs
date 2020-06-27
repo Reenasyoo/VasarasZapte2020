@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Debug.Log(VARS.test);
+        EventManager.OnButtonSwitchEvent -= SwitchPlayer;
         EventManager.OnButtonSwitchEvent += SwitchPlayer;
 
         // VARS.gameCamera.target = 
@@ -19,7 +20,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.Space))
         {
             SwitchPlayer();
         }
