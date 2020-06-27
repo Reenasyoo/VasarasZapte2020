@@ -130,7 +130,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 118916584}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WORLD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 553505561}
   - component: {fileID: 553505560}
   - component: {fileID: 553505559}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: New Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -351,7 +351,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 1.28}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -473,24 +473,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21c36ae015a5fc54fb6f5bcba68dff66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 800490124}
+  playerRenderer: {fileID: 800490125}
+  playerRrigidbody: {fileID: 800490124}
+  playerAnimator: {fileID: 800490122}
+  groundCollider: {fileID: 1975012462}
   speed: 10
-  jumpForce: 100
-  moveInput: 0
+  jumpForce: 25
   isGrounded: 0
-  feetPos: {fileID: 1975012462}
-  checkRadius: 3.5
-  whatIsGround:
+  groundLayer:
     serializedVersion: 2
     m_Bits: 256
-  jumpTime: 0.2
-  animator: {fileID: 800490122}
-  leverAnimator: {fileID: 0}
-  isLeverPressed: 0
-  left: 0
-  right: 0
-  up: 0
-  switchPlayer: 0
 --- !u!95 &800490122
 Animator:
   serializedVersion: 3
@@ -551,7 +543,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 5
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -996,24 +988,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21c36ae015a5fc54fb6f5bcba68dff66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 1504584733}
+  playerRenderer: {fileID: 0}
+  playerRrigidbody: {fileID: 0}
+  playerAnimator: {fileID: 0}
+  groundCollider: {fileID: 0}
   speed: 200
   jumpForce: 100
-  moveInput: 0
   isGrounded: 0
-  feetPos: {fileID: 193619901}
-  checkRadius: 3.5
-  whatIsGround:
+  groundLayer:
     serializedVersion: 2
-    m_Bits: 256
-  jumpTime: 0.2
-  animator: {fileID: 1504584736}
-  leverAnimator: {fileID: 0}
-  isLeverPressed: 0
-  left: 0
-  right: 0
-  up: 0
-  switchPlayer: 0
+    m_Bits: 0
 --- !u!61 &1504584732
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1229,7 +1213,7 @@ GameObject:
   - component: {fileID: 1740371497}
   - component: {fileID: 1740371496}
   - component: {fileID: 1740371495}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: New Sprite (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1253,7 +1237,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 1.28}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1387,7 +1371,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1975012461}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.229, z: 0}
+  m_LocalPosition: {x: 0, y: -1.251, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 800490120}
@@ -1430,7 +1414,7 @@ GameObject:
   - component: {fileID: 2115187952}
   - component: {fileID: 2115187951}
   - component: {fileID: 2115187950}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: New Sprite (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1454,7 +1438,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 1.28}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

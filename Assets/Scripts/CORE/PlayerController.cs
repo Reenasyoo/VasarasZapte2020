@@ -4,34 +4,38 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    // TODO: (Cleanup) Add to hash set class
     static readonly int anim_speed = Animator.StringToHash("speed");
     static readonly int anim_isFalling = Animator.StringToHash("isFalling");
     static readonly int anim_isJumping = Animator.StringToHash("isJumping");
 
-    Vector2 vector2Up = new Vector3(0, 1, 0);
 
-    public Rigidbody2D rb;
+    // Chache from insperctor EVERYTHING!
+    public SpriteRenderer playerRenderer;
+    public Rigidbody2D playerRrigidbody;
+    public Animator playerAnimator;
+    public Transform groundCollider;
+
     public float speed;
     public float jumpForce;
-    public float moveInput;
 
-    public bool isGrounded;
-    public Transform feetPos;
-    public float checkRadius;
-    public LayerMask whatIsGround;
+    [SerializeField]
+    private bool isGrounded;
 
-    private float jumpTimeCounter;
-    public float jumpTime;
-    private bool isJumping;
+    public LayerMask groundLayer;
 
-    public Animator animator;
-    public Animator leverAnimator;
+    private float checkRadius = 0.2f;
+    private float moveInput;
+    private Vector2 vector2Up = new Vector2(0, 1);
+    private bool left, right, up, switchPlayer;
+    private int direction = 0;
 
-    public bool isLeverPressed;
+    // public Animator leverAnimator; // ??????
+    // private float jumpTimeCounter;
+    // public float jumpTime;
+    // private bool isJumping;
+    // public bool isLeverPressed;
 
-    public bool left, right, up, switchPlayer;
-
-    // Start is called before the first frame update
     void Start()
     {
         EventManager.OnButtonLeftEvent += ButtonLeft;
@@ -40,81 +44,102 @@ public class PlayerController : MonoBehaviour
         EventManager.OnButtonSwitchEvent += ButtonSwitch;
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
+#if UNITY_EDITOR || UNITY_STANDALONE_WIN
         moveInput = Input.GetAxisRaw("Horizontal");
-        animator.SetFloat(anim_speed, Mathf.Abs(moveInput));
-
-        #region FOR MOBILE     
-
+#endif
+#if UNITY_IOS || UNITY_ANDROID
         if (right)
-        {
             moveInput = 1;
-        }
         else if (left)
-        {
             moveInput = -1;
-        }
-        
-        #endregion
-
-        rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+#endif
+        playerRrigidbody.velocity = new Vector2(moveInput * speed, playerRrigidbody.velocity.y);
+        playerAnimator.SetFloat(anim_speed, Mathf.Abs(moveInput));
     }
 
     private void Update()
     {
-
-        isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
-
         if (moveInput > 0)
         {
-            transform.eulerAngles = new Vector3(0, 0, 0);
+            playerRenderer.flipX = false;
         }
         else if (moveInput < 0)
         {
-            transform.eulerAngles = new Vector3(0, 180, 0);
+            playerRenderer.flipX = true;
         }
 
-        if (isGrounded == true && Input.GetKeyDown(KeyCode.W))
-        {
-            isJumping = true;
-            animator.SetBool(anim_isJumping, true);
-            jumpTimeCounter = jumpTime;
-            rb.velocity = vector2Up * jumpForce;
-        }
+        isGrounded = Physics2D.OverlapCircle(groundCollider.position, checkRadius, groundLayer);
 
-        if (Input.GetKey(KeyCode.W) && isJumping == true)
+        if (isGrounded)
         {
-            if (jumpTimeCounter > 0)
+            playerAnimator.SetBool(anim_isFalling, false);
+            playerAnimator.SetBool(anim_isJumping, false);
+            playerAnimator.SetFloat(anim_speed, Mathf.Abs(moveInput));
+
+            if (Input.GetKeyDown(KeyCode.W) || up)
             {
-                rb.velocity = vector2Up * jumpForce;
-                jumpTimeCounter -= Time.deltaTime;
-                animator.SetBool(anim_isJumping, true);
+                isGrounded = false;
+                playerAnimator.SetBool(anim_isJumping, true);
+                playerRrigidbody.velocity = vector2Up * jumpForce;
             }
-            else
-            {
-                isJumping = false;
-                animator.SetBool(anim_isJumping, false);
-                animator.SetBool(anim_isFalling, true);
-            }
-
-            rb.velocity = vector2Up * jumpForce;
         }
 
-        if (Input.GetKeyUp(KeyCode.W))
+        if (playerRrigidbody.velocity.y < 0)
         {
-            isJumping = false;
-            animator.SetBool(anim_isJumping, false);
-            animator.SetBool(anim_isFalling, true);
+            playerAnimator.SetBool(anim_isJumping, false);
+            playerAnimator.SetBool(anim_isFalling, true);
         }
 
-        if (isGrounded == true)
-        {
-            animator.SetBool(anim_isFalling, false);
-            animator.SetBool(anim_isJumping, false);
-            animator.SetFloat(anim_speed, Mathf.Abs(moveInput));
-        }
+
+        // if (moveInput > 0)
+        // {
+        //     transform.eulerAngles = new Vector3(0, 0, 0);
+        // }
+        // else if (moveInput < 0)
+        // {
+        //     transform.eulerAngles = new Vector3(0, 180, 0);
+        // }
+
+        // if (isGrounded && Input.GetKeyDown(KeyCode.W))
+        // {
+        //     isJumping = true;
+        //     playerAnimator.SetBool(anim_isJumping, true);
+        //     jumpTimeCounter = jumpTime;
+        //     playerRrigidbody.velocity = vector2Up * jumpForce;
+        // }
+
+        // if (Input.GetKey(KeyCode.W) && isJumping == true)
+        // {
+        //     if (jumpTimeCounter > 0)
+        //     {
+        //         rb.velocity = vector2Up * jumpForce;
+        //         jumpTimeCounter -= Time.deltaTime;
+        //         animator.SetBool(anim_isJumping, true);
+        //     }
+        //     else
+        //     {
+        //         isJumping = false;
+        //         animator.SetBool(anim_isJumping, false);
+        //         animator.SetBool(anim_isFalling, true);
+        //     }
+        //     rb.velocity = vector2Up * jumpForce;
+        // }
+
+        // if (Input.GetKeyUp(KeyCode.W))
+        // {
+        //     isJumping = false;
+        //     animator.SetBool(anim_isJumping, false);
+        //     animator.SetBool(anim_isFalling, true);
+        // }
+
+        // if (isGrounded == true)
+        // {
+        //     animator.SetBool(anim_isFalling, false);
+        //     animator.SetBool(anim_isJumping, false);
+        //     animator.SetFloat(anim_speed, Mathf.Abs(moveInput));
+        // }
     }
 
     private void ButtonLeft(bool _event)
