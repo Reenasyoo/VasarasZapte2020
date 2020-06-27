@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     static readonly int anim_isFalling = Animator.StringToHash("isFalling");
     static readonly int anim_isJumping = Animator.StringToHash("isJumping");
 
-    const Vector2 vector2Up = new Vector3(0, 1, 0);
+    Vector2 vector2Up = new Vector3(0, 1, 0);
 
     public Rigidbody2D rb;
     public float speed;
