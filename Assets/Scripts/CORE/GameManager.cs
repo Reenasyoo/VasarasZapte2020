@@ -6,14 +6,17 @@ public class GameManager : MonoBehaviour
 {
 
     public PlayerController[] players;
+    public CameraManager cameraMain;
 
-    // Start is called before the first frame update
     void Start()
     {
+        Debug.Log(VARS.test);
         EventManager.OnButtonSwitchEvent += SwitchPlayer;
+
+        // VARS.gameCamera.target = 
+        cameraMain.target = players[0].transform;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKey(KeyCode.Space))
@@ -29,11 +32,15 @@ public class GameManager : MonoBehaviour
         {
             players[0].thisActive = false;
             players[1].thisActive = true;
+            // VARS.gameCamera.target = players[1].transform;
+            cameraMain.target = players[1].transform;
         }
         else
         {
             players[0].thisActive = true;
             players[1].thisActive = false;
+            // VARS.gameCamera.target = players[0].transform;
+            cameraMain.target = players[0].transform;
         }
     }
 }
