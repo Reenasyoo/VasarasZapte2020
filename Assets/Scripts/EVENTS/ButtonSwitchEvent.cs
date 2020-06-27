@@ -14,6 +14,6 @@ public class ButtonSwitchEvent : MonoBehaviour, IPointerDownHandler, IPointerUpH
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        EventManager.ButtonSwitchEvent(false);
+        // EventManager.ButtonSwitchEvent(false);
     }
 }
