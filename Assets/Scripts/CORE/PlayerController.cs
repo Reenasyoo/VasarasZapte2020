@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    static readonly int anim_speed = Animator.StringToHash("speed");
+    static readonly int anim_isFalling = Animator.StringToHash("isFalling");
+    static readonly int anim_isJumping = Animator.StringToHash("isJumping");
+
+    const Vector2 vector2Up = new Vector3(0, 1, 0);
+
     public Rigidbody2D rb;
     public float speed;
     public float jumpForce;
@@ -29,7 +35,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         moveInput = Input.GetAxisRaw("Horizontal");
-        animator.SetFloat("speed", Mathf.Abs(moveInput));
+        animator.SetFloat(anim_speed, Mathf.Abs(moveInput));
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
     }
 
@@ -50,14 +56,14 @@ public class PlayerController : MonoBehaviour
         {
             isJumping = true;
             jumpTimeCounter = jumpTime;
-            rb.velocity = Vector2.up * jumpForce;
+            rb.velocity = vector2Up * jumpForce;
         }
 
         if (Input.GetKey(KeyCode.W) && isJumping == true)    
         {
             if (jumpTimeCounter > 0)
             {
-                rb.velocity = Vector2.up * jumpForce;
+                rb.velocity = vector2Up * jumpForce;
                 jumpTimeCounter -= Time.deltaTime;
             }
             else 
@@ -65,7 +71,7 @@ public class PlayerController : MonoBehaviour
                 isJumping = false;
             }
 
-            rb.velocity = Vector2.up * jumpForce;
+            rb.velocity = vector2Up * jumpForce;
         }
 
         if (Input.GetKeyUp(KeyCode.W)) 
@@ -75,9 +81,9 @@ public class PlayerController : MonoBehaviour
 
         if (isGrounded == true) 
         {
-            animator.SetBool("isFalling", false);
-            animator.SetBool("isJumping", false);
-            animator.SetFloat("speed", Mathf.Abs(moveInput));
+            animator.SetBool(anim_isFalling, false);
+            animator.SetBool(anim_isJumping, false);
+            animator.SetFloat(anim_speed, Mathf.Abs(moveInput));
         }
     }
 }
