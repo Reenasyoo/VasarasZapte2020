@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D rb;
     public float speed;
     public float jumpForce;
-    private float moveInput;
+    public float moveInput;
 
     public bool isGrounded;
     public Transform feetPos;
@@ -42,18 +42,33 @@ public class PlayerController : MonoBehaviour
     {
         moveInput = Input.GetAxisRaw("Horizontal");
         animator.SetFloat(anim_speed, Mathf.Abs(moveInput));
+
+        #region FOR MOBILE     
+
+        if (right)
+        {
+            moveInput = 1;
+        }
+        else if (left)
+        {
+            moveInput = -1;
+        }
+        
+        #endregion
+
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
     }
 
     private void Update()
     {
+
         isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
 
         if (moveInput > 0)
         {
             transform.eulerAngles = new Vector3(0, 0, 0);
         }
-        else if (moveInput < 0 || left)
+        else if (moveInput < 0)
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
