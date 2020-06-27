@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
 
     public LayerMask groundLayer;
 
-    private float checkRadius = 0.2f;
+    public float groundCheck = 0.2f;
     private float moveInput;
     private Vector2 vector2Up = new Vector2(0, 1);
     private bool left, right, up, switchPlayer;
@@ -61,6 +61,15 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        RaycastHit2D hit = Physics2D.Raycast(groundCollider.position, -vector2Up, groundCheck, groundLayer);
+        // Debug.DrawRay(transform.position, -vector2Up * groundCheck, Color.red);
+        // Debug.DrawRay(groundCollider.position, -vector2Up * groundCheck, Color.red);
+
+        if (hit)
+        {   
+            isGrounded = true;
+        }
+
         if (moveInput > 0)
         {
             playerRenderer.flipX = false;
@@ -70,7 +79,7 @@ public class PlayerController : MonoBehaviour
             playerRenderer.flipX = true;
         }
 
-        isGrounded = Physics2D.OverlapCircle(groundCollider.position, checkRadius, groundLayer);
+        // isGrounded = Physics2D.OverlapArea(groundCollider.position, checkRadius, groundLayer);
 
         if (isGrounded)
         {
@@ -78,7 +87,7 @@ public class PlayerController : MonoBehaviour
             playerAnimator.SetBool(anim_isJumping, false);
             playerAnimator.SetFloat(anim_speed, Mathf.Abs(moveInput));
 
-            if (Input.GetKeyDown(KeyCode.W) || up)
+            if (isGrounded && (Input.GetKeyDown(KeyCode.W) || up))
             {
                 isGrounded = false;
                 playerAnimator.SetBool(anim_isJumping, true);
