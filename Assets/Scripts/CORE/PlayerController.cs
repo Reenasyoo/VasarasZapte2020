@@ -55,6 +55,7 @@ public class PlayerController : MonoBehaviour
         if (isGrounded == true && Input.GetKeyDown(KeyCode.W)) 
         {
             isJumping = true;
+            animator.SetBool(anim_isJumping, true);
             jumpTimeCounter = jumpTime;
             rb.velocity = vector2Up * jumpForce;
         }
@@ -65,10 +66,13 @@ public class PlayerController : MonoBehaviour
             {
                 rb.velocity = vector2Up * jumpForce;
                 jumpTimeCounter -= Time.deltaTime;
+                animator.SetBool(anim_isJumping, true);
             }
             else 
             {
                 isJumping = false;
+                animator.SetBool(anim_isJumping, false);
+                animator.SetBool(anim_isFalling, true);
             }
 
             rb.velocity = vector2Up * jumpForce;
@@ -77,6 +81,8 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.W)) 
         {
             isJumping = false;
+            animator.SetBool(anim_isJumping, false);
+            animator.SetBool(anim_isFalling, true);
         }
 
         if (isGrounded == true) 
