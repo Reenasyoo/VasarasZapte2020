@@ -26,9 +26,15 @@ public class PlayerController : MonoBehaviour
 
     public Animator animator;
 
+    public bool left, right, up, switchPlayer;
+
     // Start is called before the first frame update
     void Start()
     {
+        EventManager.OnButtonLeftEvent += ButtonLeft;
+        EventManager.OnButtonRightEvent += ButtonRight;
+        EventManager.OnButtonUpEvent += ButtonUp;
+        EventManager.OnButtonSwitchEvent += ButtonSwitch;
     }
 
     // Update is called once per frame
@@ -47,12 +53,12 @@ public class PlayerController : MonoBehaviour
         {
             transform.eulerAngles = new Vector3(0, 0, 0);
         }
-        else if (moveInput < 0) 
+        else if (moveInput < 0 || left)
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
 
-        if (isGrounded == true && Input.GetKeyDown(KeyCode.W)) 
+        if (isGrounded == true && Input.GetKeyDown(KeyCode.W))
         {
             isJumping = true;
             animator.SetBool(anim_isJumping, true);
@@ -60,7 +66,7 @@ public class PlayerController : MonoBehaviour
             rb.velocity = vector2Up * jumpForce;
         }
 
-        if (Input.GetKey(KeyCode.W) && isJumping == true)    
+        if (Input.GetKey(KeyCode.W) && isJumping == true)
         {
             if (jumpTimeCounter > 0)
             {
@@ -68,7 +74,7 @@ public class PlayerController : MonoBehaviour
                 jumpTimeCounter -= Time.deltaTime;
                 animator.SetBool(anim_isJumping, true);
             }
-            else 
+            else
             {
                 isJumping = false;
                 animator.SetBool(anim_isJumping, false);
@@ -78,18 +84,42 @@ public class PlayerController : MonoBehaviour
             rb.velocity = vector2Up * jumpForce;
         }
 
-        if (Input.GetKeyUp(KeyCode.W)) 
+        if (Input.GetKeyUp(KeyCode.W))
         {
             isJumping = false;
             animator.SetBool(anim_isJumping, false);
             animator.SetBool(anim_isFalling, true);
         }
 
-        if (isGrounded == true) 
+        if (isGrounded == true)
         {
             animator.SetBool(anim_isFalling, false);
             animator.SetBool(anim_isJumping, false);
             animator.SetFloat(anim_speed, Mathf.Abs(moveInput));
         }
+    }
+
+    private void ButtonLeft(bool _event)
+    {
+        left = _event;
+        Debug.Log("Button Left");
+    }
+
+    private void ButtonRight(bool _event)
+    {
+        right = _event;
+        Debug.Log("Button Right");
+    }
+
+    private void ButtonUp(bool _event)
+    {
+        up = _event;
+        Debug.Log("Button Up");
+    }
+
+    private void ButtonSwitch(bool _event)
+    {
+        switchPlayer = _event;
+        Debug.Log("Button Switch");
     }
 }
