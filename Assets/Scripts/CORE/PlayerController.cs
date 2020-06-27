@@ -25,6 +25,9 @@ public class PlayerController : MonoBehaviour
     private bool isJumping;
 
     public Animator animator;
+    public Animator leverAnimator;
+
+    public bool isLeverPressed;
 
     // Start is called before the first frame update
     void Start()
