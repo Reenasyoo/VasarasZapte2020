@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &676017505
+--- !u!114 &51889116
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 4348848937992627605}
---- !u!114 &51889116
+--- !u!114 &676017505
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,17 +40,17 @@ PrefabInstance:
     - target: {fileID: 8156587289743639764, guid: 3a57df56a67624129b8e57eeee9d4893,
         type: 3}
       propertyPath: thisActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8156587289743639765, guid: 3a57df56a67624129b8e57eeee9d4893,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 26.68
+      value: 4.05
       objectReference: {fileID: 0}
     - target: {fileID: 8156587289743639765, guid: 3a57df56a67624129b8e57eeee9d4893,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.45
+      value: 4.06
       objectReference: {fileID: 0}
     - target: {fileID: 8156587289743639765, guid: 3a57df56a67624129b8e57eeee9d4893,
         type: 3}
@@ -100,7 +100,17 @@ PrefabInstance:
     - target: {fileID: 8156587289743639770, guid: 3a57df56a67624129b8e57eeee9d4893,
         type: 3}
       propertyPath: m_Name
-      value: PLAYER 2
+      value: PLAYER 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8156587290717325874, guid: 3a57df56a67624129b8e57eeee9d4893,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.039673805
+      objectReference: {fileID: 0}
+    - target: {fileID: 8156587290717325874, guid: 3a57df56a67624129b8e57eeee9d4893,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.40828896
       objectReference: {fileID: 0}
     - target: {fileID: 8156587290717325875, guid: 3a57df56a67624129b8e57eeee9d4893,
         type: 3}
