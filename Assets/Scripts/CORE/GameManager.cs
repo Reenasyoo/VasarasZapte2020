@@ -9,6 +9,11 @@ public class GameManager : MonoBehaviour
     public PlayerController[] players;
     public CameraManager cameraMain;
 
+    public GameObject[] levels;
+
+    public GameObject currentLevel;
+    public int lvlID;
+
     // Timer vars
     public float startTime;
     public TextMeshProUGUI timeText;
@@ -16,6 +21,10 @@ public class GameManager : MonoBehaviour
     public bool gameStarted = false;
 
     public int done = 0;
+    public GameObject menuContainer;
+    public GameObject gameContainer;
+
+    private Vector2 emptyVector = new Vector2(0, 0);
 
     void Start()
     {
@@ -42,6 +51,13 @@ public class GameManager : MonoBehaviour
             if (Input.GetKeyUp(KeyCode.Space))
             {
                 SwitchPlayer();
+            }
+
+
+            if (VARS.doneCount == 2)
+            {
+                Debug.Log("Next Level");
+                NextLevel();
             }
         }
     }
@@ -73,16 +89,50 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
-
+        LoadLevel(0);
     }
 
-    public void LoadLevel()
+    public void LoadLevel(int _index)
     {
         /*
-        load level of index
-        spawn players
-        set first player active
         set active canvas containers
          */
+        menuContainer.SetActive(false);
+        gameContainer.SetActive(true);
+        lvlID = _index;
+        currentLevel = levels[_index];
+        levels[_index].SetActive(true);
+        SetPlayers(true, GetPlayerSpawns(currentLevel.transform));
+    }
+
+    private void SetPlayers(bool _active, Vector2[] _positions)
+    {
+        for (int i = 0; i < players.Length; i++)
+        {
+            players[i].gameObject.SetActive(_active);
+            players[i].gameObject.transform.position = _positions[i];
+        }
+    }
+
+    private void SetPlayers(bool _active)
+    {
+        for (int i = 0; i < players.Length; i++)
+        {
+            players[i].gameObject.SetActive(_active);
+        }
+    }
+
+    private Vector2[] GetPlayerSpawns(Transform _parent)
+    {
+        Vector2[] positions = { new Vector2(), new Vector2() };
+
+        positions[0] = _parent.GetChild(0).GetChild(0).position;
+        positions[1] = _parent.GetChild(0).GetChild(1).position;
+
+        return positions;
+    }
+
+    public void NextLevel() {
+        LoadLevel(lvlID+1);
     }
 }

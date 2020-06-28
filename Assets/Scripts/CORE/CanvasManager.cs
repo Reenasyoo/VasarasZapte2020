@@ -8,7 +8,6 @@ public class CanvasManager : MonoBehaviour
 {
     public TextMeshProUGUI pointsText;
     public GameObject pausePanel;
-    public GameObject menuPanel;
     public GameObject gameOverPanel;
 
 
