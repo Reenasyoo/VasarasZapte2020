@@ -5,6 +5,7 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager instance;
 
     public PlayerController[] players;
     public CameraManager cameraMain;
@@ -25,7 +26,13 @@ public class GameManager : MonoBehaviour
     public GameObject gameContainer;
 
     private Vector2 emptyVector = new Vector2(0, 0);
-
+    void OnAwake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
     void Start()
     {
         EventManager.OnButtonSwitchEvent -= SwitchPlayer;
