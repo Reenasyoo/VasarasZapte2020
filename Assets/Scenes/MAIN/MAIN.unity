@@ -147,7 +147,7 @@ PrefabInstance:
     - target: {fileID: 558923055472982618, guid: 6693c16f3a1954b9cb79d8dde750b135,
         type: 3}
       propertyPath: jumpForce
-      value: 20
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 558923055472982619, guid: 6693c16f3a1954b9cb79d8dde750b135,
         type: 3}
@@ -9114,6 +9114,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1675795487, guid: dc584557c4f474fdd8d5c71ea29e14fa, type: 3}
+      propertyPath: m_UsedByComposite
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4735909486291672792, guid: dc584557c4f474fdd8d5c71ea29e14fa,
         type: 3}
       propertyPath: kolis
@@ -10793,7 +10797,7 @@ PrefabInstance:
     - target: {fileID: 558923055472982618, guid: 6693c16f3a1954b9cb79d8dde750b135,
         type: 3}
       propertyPath: jumpForce
-      value: 20
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 558923055472982619, guid: 6693c16f3a1954b9cb79d8dde750b135,
         type: 3}
