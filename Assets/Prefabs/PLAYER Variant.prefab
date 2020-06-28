@@ -37,6 +37,12 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8156587289743639760, guid: 3a57df56a67624129b8e57eeee9d4893,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7405886002107424525, guid: 6ee021d459d36f54a9d051fe2ab0c9fa,
+        type: 3}
     - target: {fileID: 8156587289743639764, guid: 3a57df56a67624129b8e57eeee9d4893,
         type: 3}
       propertyPath: thisActive
@@ -97,10 +103,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8156587289743639767, guid: 3a57df56a67624129b8e57eeee9d4893,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 9c9a44b948bce5043950a017a686e13e, type: 2}
+    - target: {fileID: 8156587289743639767, guid: 3a57df56a67624129b8e57eeee9d4893,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8156587289743639770, guid: 3a57df56a67624129b8e57eeee9d4893,
         type: 3}
       propertyPath: m_Name
-      value: PLAYER 1
+      value: PLAYER Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8156587290717325874, guid: 3a57df56a67624129b8e57eeee9d4893,
         type: 3}

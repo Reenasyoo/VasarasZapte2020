@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -22,13 +23,16 @@ public class PlayerController : MonoBehaviour
 
     public bool isGrounded;
 
+    PlayerData data;
+    public Text pointsText;
+
     // public LayerMask groundLayer;
 
     // public float groundCheck = 0.2f;
     private float moveInput;
     private Vector2 vector2Up = new Vector2(0, 1);
     private bool left, right, up, switchPlayer;
-    private int direction = 0;
+    // private int direction = 0;
 
     public bool thisActive = false;
 
@@ -40,6 +44,8 @@ public class PlayerController : MonoBehaviour
         EventManager.OnButtonRightEvent += ButtonRight;
         EventManager.OnButtonUpEvent -= ButtonUp;
         EventManager.OnButtonUpEvent += ButtonUp;
+
+        data = GameObject.Find("PlayerData").GetComponent<PlayerData>();
     }
 
     private void Update()
@@ -131,5 +137,22 @@ public class PlayerController : MonoBehaviour
         up = _event;
         Debug.Log("Button Up" + _event);
     }
-
+    private void OnTriggerEnter2D(Collider2D collision) // wanted to make it in seperate script, but that didn't work
+    {
+        switch (collision.tag) // te varetu ari ielikt lever, pogas, "durvis" utt.
+        {
+            case "collectable":
+                {
+                    Destroy(collision.gameObject);
+                    data.points++;
+                    pointsText.text = data.points.ToString();
+                    return;
+                }
+            default: 
+                {
+                    return;
+                }
+            
+        }
+    }
 }
