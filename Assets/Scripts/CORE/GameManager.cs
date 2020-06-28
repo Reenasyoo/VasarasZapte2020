@@ -63,6 +63,8 @@ public class GameManager : MonoBehaviour
 
             if (VARS.doneCount == 2)
             {
+                VARS.doneCount = 0;
+
                 Debug.Log("Next Level");
                 NextLevel();
             }
@@ -107,6 +109,7 @@ public class GameManager : MonoBehaviour
         menuContainer.SetActive(false);
         gameContainer.SetActive(true);
         lvlID = _index;
+        
         currentLevel = levels[_index];
         levels[_index].SetActive(true);
         SetPlayers(true, GetPlayerSpawns(currentLevel.transform));
@@ -154,8 +157,11 @@ public class GameManager : MonoBehaviour
     }
 
     public void NextLevel()
-    {
+    {   
+        currentLevel.SetActive(false);
         if (lvlID + 1 < levels.Length)
             LoadLevel(lvlID + 1);
     }
+
+
 }
