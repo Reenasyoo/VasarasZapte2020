@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: male_idle
+  m_Name: male_fall
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -19,8 +19,8 @@ AnimationClip:
   m_FloatCurves: []
   m_PPtrCurves:
   - curve:
-    - time: 0.016666668
-      value: {fileID: -2948514184157894059, guid: 67e48103734aecd4a80ebf81ffcbaead,
+    - time: 0
+      value: {fileID: -1229775228686066283, guid: 67e48103734aecd4a80ebf81ffcbaead,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -41,13 +41,13 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -2948514184157894059, guid: 67e48103734aecd4a80ebf81ffcbaead, type: 3}
+    - {fileID: -1229775228686066283, guid: 67e48103734aecd4a80ebf81ffcbaead, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.033333335
+    m_StopTime: 0.016666668
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
