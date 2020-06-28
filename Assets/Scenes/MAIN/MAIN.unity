@@ -3318,6 +3318,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PLAYER 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4348848937992627611, guid: d8d4210a3787d47aca2e1ec902f1d60d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Female
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8d4210a3787d47aca2e1ec902f1d60d, type: 3}
 --- !u!1 &1191471772
@@ -4756,6 +4761,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PLAYER 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348848937992627611, guid: d8d4210a3787d47aca2e1ec902f1d60d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Male
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8d4210a3787d47aca2e1ec902f1d60d, type: 3}
