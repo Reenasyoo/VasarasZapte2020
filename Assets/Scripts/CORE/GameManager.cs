@@ -122,7 +122,21 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private Vector2[] GetPlayerSpawns(Transform _parent)
+    public void ResetPlayerPos(GameObject _player, string _tag)
+    {
+        Vector2[] posX = GetPlayerSpawns(currentLevel.transform);
+        if (_tag == "Male")
+        {
+            _player.transform.position = posX[0];
+        }
+        if (_tag == "Female")
+        {
+            _player.transform.position = posX[1];
+        }
+
+    }
+
+    public Vector2[] GetPlayerSpawns(Transform _parent)
     {
         Vector2[] positions = { new Vector2(), new Vector2() };
 
@@ -132,7 +146,8 @@ public class GameManager : MonoBehaviour
         return positions;
     }
 
-    public void NextLevel() {
-        LoadLevel(lvlID+1);
+    public void NextLevel()
+    {
+        LoadLevel(lvlID + 1);
     }
 }
