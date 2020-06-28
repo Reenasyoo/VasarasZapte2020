@@ -5,30 +5,27 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider2D))]
 public class Water : MonoBehaviour
 {
-    public BoxCollider2D kolis;
-
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         switch (this.gameObject.tag)
         {
-            case "Blue":
+            case "Red":
                 {
                     if (collision.tag == "Male") 
                     {   
                         Debug.Log("Male has entered blue's water");
 
-                        GameManager.instance.ResetPlayerPos(kolis.gameObject, "Male");
+                        GameManager.instance.ResetPlayerPos(collision.gameObject, "Male");
                     }
                     break;
                 }
-            case "Red":
+            case "Blue":
                 {
                     if (collision.tag == "Female")
                     {
                         Debug.Log("Female has entered red's water");
 
-                        GameManager.instance.ResetPlayerPos(kolis.gameObject, "Female");
+                        GameManager.instance.ResetPlayerPos(collision.gameObject, "Female");
                     }
                     break;
                 }
