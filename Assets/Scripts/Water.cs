@@ -9,7 +9,7 @@ public class Water : MonoBehaviour
     {
         switch (this.gameObject.tag)
         {
-            case "Red":
+            case "Blue":
                 {
                     if (collision.tag == "Male") 
                     {   
@@ -19,7 +19,7 @@ public class Water : MonoBehaviour
                     }
                     break;
                 }
-            case "Blue":
+            case "Red":
                 {
                     if (collision.tag == "Female")
                     {
