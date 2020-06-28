@@ -79,7 +79,7 @@ public class PlayerController : MonoBehaviour
     {
         if (thisActive)
         {
-#if UNITY_EDITOR || UNITY_STANDALONE_WIN
+#if UNITY_EDITOR || UNITY_STANDALONE_WIN || UNITY_WEBGL
             moveInput = Input.GetAxisRaw("Horizontal");
 #endif
 #if UNITY_IOS || UNITY_ANDROID
