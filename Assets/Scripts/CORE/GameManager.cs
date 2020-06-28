@@ -148,6 +148,7 @@ public class GameManager : MonoBehaviour
 
     public void NextLevel()
     {
-        LoadLevel(lvlID + 1);
+        if (lvlID + 1 < levels.Length)
+            LoadLevel(lvlID + 1);
     }
 }
