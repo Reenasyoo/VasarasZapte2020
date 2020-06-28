@@ -1303,8 +1303,8 @@ GameObject:
   - component: {fileID: 2976208098820145183}
   - component: {fileID: 7325186323400837216}
   m_Layer: 0
-  m_Name: Source2
-  m_TagString: Untagged
+  m_Name: Source2Blue
+  m_TagString: Blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1337,7 +1337,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 35.02121, y: 10.3641205}
@@ -1365,7 +1365,7 @@ GameObject:
   - component: {fileID: 6535012893094471245}
   m_Layer: 0
   m_Name: red (2)
-  m_TagString: Untagged
+  m_TagString: Red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1444,9 +1444,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2127585857921375822}
+  - component: {fileID: 2546528195849727021}
   m_Layer: 0
-  m_Name: Source2
-  m_TagString: Untagged
+  m_Name: Source2Red
+  m_TagString: Red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1469,6 +1470,32 @@ Transform:
   m_Father: {fileID: 913631158947158854}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2546528195849727021
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352653973369394011}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.09313202, y: -0.5774183}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.942974, y: 0.7019787}
+  m_EdgeRadius: 0
 --- !u!1 &535333025122401670
 GameObject:
   m_ObjectHideFlags: 0
@@ -1481,7 +1508,7 @@ GameObject:
   - component: {fileID: 8989754261918293836}
   m_Layer: 0
   m_Name: blue (5)
-  m_TagString: Untagged
+  m_TagString: Blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1832,7 +1859,7 @@ GameObject:
   - component: {fileID: 5137536789801035171}
   m_Layer: 0
   m_Name: red (4)
-  m_TagString: Untagged
+  m_TagString: Red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1973,7 +2000,7 @@ GameObject:
   - component: {fileID: 5113973979848235909}
   m_Layer: 0
   m_Name: red (1)
-  m_TagString: Untagged
+  m_TagString: Red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2088,6 +2115,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 695953a6970a2704ebeb0b8c1fac8631, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sourceBlueOne: {fileID: 0}
+  sourceBlueTwo: {fileID: 0}
+  sourceRedOne: {fileID: 0}
+  sourceRedTwo: {fileID: 0}
 --- !u!1 &2464223123734047952
 GameObject:
   m_ObjectHideFlags: 0
@@ -2100,7 +2131,7 @@ GameObject:
   - component: {fileID: 8147915183923726702}
   m_Layer: 0
   m_Name: blue (9)
-  m_TagString: Untagged
+  m_TagString: Blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2181,7 +2212,7 @@ GameObject:
   - component: {fileID: 2266393247078055052}
   m_Layer: 0
   m_Name: blue
-  m_TagString: Untagged
+  m_TagString: Blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2319,6 +2350,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8459202262692876856}
+  - component: {fileID: 4640247724528176502}
+  - component: {fileID: 5159377041797809508}
   m_Layer: 0
   m_Name: Water
   m_TagString: Untagged
@@ -2342,6 +2375,48 @@ Transform:
   m_Father: {fileID: 647905817}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &4640247724528176502
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3154457906645124391}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &5159377041797809508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3154457906645124391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 695953a6970a2704ebeb0b8c1fac8631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sourceBlueOne: {fileID: 4105546507942678568}
+  sourceBlueTwo: {fileID: 7325186323400837216}
+  sourceRedOne: {fileID: 3098386948005276590}
+  sourceRedTwo: {fileID: 2546528195849727021}
 --- !u!1 &3995582547922908681
 GameObject:
   m_ObjectHideFlags: 0
@@ -2354,7 +2429,7 @@ GameObject:
   - component: {fileID: 7942061420728708281}
   m_Layer: 0
   m_Name: blue (3)
-  m_TagString: Untagged
+  m_TagString: Blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2435,7 +2510,7 @@ GameObject:
   - component: {fileID: 6615623181819147491}
   m_Layer: 0
   m_Name: red (7)
-  m_TagString: Untagged
+  m_TagString: Red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2517,7 +2592,7 @@ GameObject:
   - component: {fileID: 5428051347033130567}
   m_Layer: 0
   m_Name: blue (1)
-  m_TagString: Untagged
+  m_TagString: Blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2595,7 +2670,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 913631158947158854}
-  - component: {fileID: 7476945458847199662}
   m_Layer: 0
   m_Name: redWater
   m_TagString: Untagged
@@ -2619,18 +2693,6 @@ Transform:
   m_Father: {fileID: 8459202262692876856}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7476945458847199662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4429743337706961294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 695953a6970a2704ebeb0b8c1fac8631, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4901529937074908656
 GameObject:
   m_ObjectHideFlags: 0
@@ -2921,7 +2983,7 @@ GameObject:
   - component: {fileID: 2230509682559114954}
   m_Layer: 0
   m_Name: blue (4)
-  m_TagString: Untagged
+  m_TagString: Blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3002,7 +3064,7 @@ GameObject:
   - component: {fileID: 2096833279567774222}
   m_Layer: 0
   m_Name: red (6)
-  m_TagString: Untagged
+  m_TagString: Red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3113,9 +3175,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1760921739505547611}
+  - component: {fileID: 3098386948005276590}
   m_Layer: 0
-  m_Name: Source1
-  m_TagString: Untagged
+  m_Name: Source1Red
+  m_TagString: Red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3138,6 +3201,32 @@ Transform:
   m_Father: {fileID: 913631158947158854}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &3098386948005276590
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6227689385861732931}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.04496765, y: -0.39347267}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.8779697, y: 0.70770836}
+  m_EdgeRadius: 0
 --- !u!1 &6845134548374857031
 GameObject:
   m_ObjectHideFlags: 0
@@ -3150,7 +3239,7 @@ GameObject:
   - component: {fileID: 2737846814163425742}
   m_Layer: 0
   m_Name: blue (2)
-  m_TagString: Untagged
+  m_TagString: Blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3231,7 +3320,7 @@ GameObject:
   - component: {fileID: 3923717382727089426}
   m_Layer: 0
   m_Name: red
-  m_TagString: Untagged
+  m_TagString: Red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3313,7 +3402,7 @@ GameObject:
   - component: {fileID: 1678523525065494178}
   m_Layer: 0
   m_Name: red (5)
-  m_TagString: Untagged
+  m_TagString: Red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3395,7 +3484,7 @@ GameObject:
   - component: {fileID: 5001064633939498794}
   m_Layer: 0
   m_Name: blue (8)
-  m_TagString: Untagged
+  m_TagString: Blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3476,7 +3565,7 @@ GameObject:
   - component: {fileID: 2574927045616156031}
   m_Layer: 0
   m_Name: red (3)
-  m_TagString: Untagged
+  m_TagString: Red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3557,8 +3646,8 @@ GameObject:
   - component: {fileID: 968490085055962711}
   - component: {fileID: 4105546507942678568}
   m_Layer: 0
-  m_Name: Source1
-  m_TagString: Untagged
+  m_Name: Source1Blue
+  m_TagString: Blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3593,7 +3682,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 19.981937, y: 1.3774109}
@@ -6584,7 +6673,7 @@ GameObject:
   - component: {fileID: 7643051964309300436}
   m_Layer: 0
   m_Name: blue (6)
-  m_TagString: Untagged
+  m_TagString: Blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6665,7 +6754,7 @@ GameObject:
   - component: {fileID: 3809630296015613984}
   m_Layer: 0
   m_Name: blue (7)
-  m_TagString: Untagged
+  m_TagString: Blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
