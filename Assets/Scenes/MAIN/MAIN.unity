@@ -207,6 +207,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4348848937992627605, guid: d8d4210a3787d47aca2e1ec902f1d60d,
+        type: 3}
+      propertyPath: thisActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348848937992627606, guid: d8d4210a3787d47aca2e1ec902f1d60d,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 9c9a44b948bce5043950a017a686e13e, type: 2}
     - target: {fileID: 4348848937992627611, guid: d8d4210a3787d47aca2e1ec902f1d60d,
         type: 3}
       propertyPath: m_Name
@@ -5772,6 +5782,7 @@ MonoBehaviour:
   cameraMain: {fileID: 1303433138}
   startTime: 0
   timeText: {fileID: 1525721612}
+  gameStarted: 0
   done: 0
 --- !u!4 &1966199427
 Transform:
@@ -6176,6 +6187,11 @@ PrefabInstance:
     - target: {fileID: 4348848937992627604, guid: d8d4210a3787d47aca2e1ec902f1d60d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4348848937992627605, guid: d8d4210a3787d47aca2e1ec902f1d60d,
+        type: 3}
+      propertyPath: gender
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4348848937992627611, guid: d8d4210a3787d47aca2e1ec902f1d60d,

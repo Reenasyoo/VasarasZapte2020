@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     public float startTime;
     public TextMeshProUGUI timeText;
 
+    public bool gameStarted = false;
+
     public int done = 0;
 
     void Start()
@@ -27,17 +29,20 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        done = VARS.doneCount;
-        float time = Time.time - startTime;
-
-        string minutes = ((int)time / 60).ToString();
-        string seconds = (time % 60).ToString("F2");
-
-        timeText.text = minutes + ":" + seconds;
-
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (gameStarted)
         {
-            SwitchPlayer();
+            done = VARS.doneCount;
+            float time = Time.time - startTime;
+
+            string minutes = ((int)time / 60).ToString();
+            string seconds = (time % 60).ToString("F2");
+
+            timeText.text = minutes + ":" + seconds;
+
+            if (Input.GetKeyUp(KeyCode.Space))
+            {
+                SwitchPlayer();
+            }
         }
     }
 
@@ -64,5 +69,20 @@ public class GameManager : MonoBehaviour
     {
         // Ja abi speletaji sasniedz atvertas durvis, taimeris apstajas.
         // Taimeris apstajas tieshi taja bridi, kad pedejais speletajs ir sasniedzis durvis.
+    }
+
+    public void StartGame()
+    {
+
+    }
+
+    public void LoadLevel()
+    {
+        /*
+        load level of index
+        spawn players
+        set first player active
+        set active canvas containers
+         */
     }
 }
