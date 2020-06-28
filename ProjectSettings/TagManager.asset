@@ -8,6 +8,11 @@ TagManager:
   - collectable
   - Male
   - Female
+  - Exit
+  - Exit - Male
+  - Exit - Female
+  - Blue
+  - Red
   layers:
   - Default
   - TransparentFX
@@ -18,7 +23,7 @@ TagManager:
   - 
   - 
   - Ground
-  - 
+  - Exit
   - 
   - 
   - 

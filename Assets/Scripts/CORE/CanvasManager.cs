@@ -2,44 +2,49 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class CanvasManager : MonoBehaviour
 {
+    public TextMeshProUGUI pointsText;
+    public GameObject pausePanel;
+    public GameObject menuPanel;
+    public GameObject gameOverPanel;
 
-    public Button left;
+
+    private bool gamePaused = false;
 
     private void Start()
     {
-        // left.OnPointerDown.AddListener(() => { ButtonLeft(); });
-        // EventTrigger trigger = left.gameObject.AddComponent<EventTrigger>();
-        // var pointerDown = new EventTrigger.Entry();
-        // pointerDown.eventID = EventTriggerType.PointerDown;
-        // pointerDown.callback.AddListener((e) => ButtonLeft );
-        // trigger.triggers.Add(pointerDown);
+        if(Input.GetKeyUp(KeyCode.Escape))
+        {
+            if(!gamePaused) 
+            {
+                PauseGame();
+            }
+            else 
+            {
+                ResumeGame();
+            }
+        }
     }
 
     private void Update()
     {
-
+        pointsText.text = VARS.points.ToString();
     }
 
-    // public void ButtonLeft()
-    // {
-    //     // EventManager.ButtonLeftEvent();
-    // }
+    public void PauseGame()
+    {
+        pausePanel.SetActive(true);
+        gamePaused = true;
+        Time.timeScale = 0;
+    }
 
-    // public void ButtonRight()
-    // {
-    //     EventManager.ButtonRightEvent();
-    // }
-
-    // public void ButtonUp()
-    // {
-    //     EventManager.ButtonUpEvent();
-    // }
-
-    // public void ButtonSwitch()
-    // {
-    //     EventManager.ButtonSwitchEvent();
-    // }
+    public void ResumeGame()
+    {
+        pausePanel.SetActive(false);
+        gamePaused = false;
+        Time.timeScale = 1;
+    }
 }
