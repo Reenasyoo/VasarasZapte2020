@@ -2,15 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(BoxCollider2D)]
 public class Water : MonoBehaviour
 {
     public BoxCollider2D kolis;
 
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -19,8 +15,10 @@ public class Water : MonoBehaviour
             case "Blue":
                 {
                     if (collision.tag == "Male") 
-                    {
-                    
+                    {   
+                        Debug.Log("Male has entered blue's water");
+
+                        GameManager.instance.ResetPlayerPos(kolis.gameObject, "Male");
                     }
                     break;
                 }
@@ -28,7 +26,9 @@ public class Water : MonoBehaviour
                 {
                     if (collision.tag == "Female")
                     {
-                        
+                        Debug.Log("Female has entered red's water");
+
+                        GameManager.instance.ResetPlayerPos(kolis.gameObject, "Female");
                     }
                     break;
                 }

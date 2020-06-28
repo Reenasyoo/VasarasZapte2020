@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
     public GameObject gameContainer;
 
     private Vector2 emptyVector = new Vector2(0, 0);
-    void OnAwake()
+    void Awake()
     {
         if (instance == null)
         {
